@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Propiedad val de campo</title>
+	<script src="../jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<input type="text" id="miCampo" name="">
+<button id="miBoton">Tomar valor</button>
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+        //asi le agrgamos valor a un campo de texto
+        $('#miCampo').val('este es mi valor');
+
+        //asi obtenemos el valor de un campo de texto
+        $('#miCampo').val('');
+           
+	});
+</script>

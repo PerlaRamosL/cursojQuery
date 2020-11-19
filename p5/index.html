@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contol select</title>
+	<script src="../jquery-3.5.1.min.js"></script>
+</head>
+<body>
+        <select id="miSelect">
+        	<option value="">Selecciona</option>
+            <option value="1">valor 1</option>
+            <option value="2">valor 2</option>
+            <option value="3">valor 3</option>
+        </select>
+     
+     <button id="miBoton">Seleccion en select</button>
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#miSelect').val('2');
+        $('#miBoton').click(function(){
+              alert($('#miSelect').val());
+
+        });
+           
+	});
+</script>

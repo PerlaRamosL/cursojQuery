@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Propiedad text</title>
+	<script src="../jquery-3.5.1.min.js"></script>
+</head>
+<body>
+ <div id="miDiv">mi nombre es juan</div>
+ <button id="miBoton"> Click aqui</button>
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+        
+        $('#miBoton').click(function(){
+           //obtenemos el valor que tiene en text
+           $('#miDiv').text();
+           
+           //asi obtenemos un texto al tag div o una seccion
+           $('#miDiv').text('agregamos un texto');
+
+           alert($('#miDiv').text());
+
+        });
+
+	});
+</script>
